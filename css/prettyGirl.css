@@ -1,0 +1,65 @@
+html,body,ul{
+	padding: 0;
+	margin:0;
+}
+html,body{
+	width:100%;
+	height:100%;
+	}
+ul{
+	list-style: none;
+}
+.pretty-girl{
+	width:100%;
+	height:100%;
+	background:#000;
+	overflow: hidden;
+}
+.pretty-girl ul{
+	width:100%;
+	height:100%;
+}
+.pretty-girl ul li{
+	float: left;
+	position: relative;
+	width:16%;
+	height:100%;
+	-webkit-transform: skew(-8deg);
+	-moz-transform: skew(-8deg);
+	-ms-transform: skew(-8deg);
+	-o-transform: skew(-8deg);
+	transform: skew(-8deg);
+	transition:all .5s;
+}
+.pretty-girl ul li:after{
+	content: "";
+	display: block;
+	width:100%;
+	height:100%;
+	background: rgba(0,0,0,.6);
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+.pretty-girl ul li:nth-child(1){
+	background: url(../img/girl1.jpg) center no-repeat;
+}
+.pretty-girl ul li:nth-child(2){
+	background: url(../img/girl2.jpg) center no-repeat;
+}
+.pretty-girl ul li:nth-child(3){
+	background: url(../img/girl3.jpg) center no-repeat;
+} 
+.pretty-girl ul li:nth-child(4){
+	background: url(../img/girl4.jpg) center no-repeat;
+}
+.pretty-girl ul li.active{
+	width: 52%;
+	z-index: 10;
+	-webkit-box-shadow: 0px 0px 30px #000;
+	-moz-box-shadow: 0px 0px 30px #000;
+	box-shadow: 0px 0px 30px #000;
+}
+.pretty-girl ul li.active:after{
+	background:transparent;
+}
